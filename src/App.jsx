@@ -1,11 +1,18 @@
 import React from 'react'
-import Dashboard from './layouts/dashBoard'
 import "./App.css"
+import Start from './layouts/start'
+import { Routes, Route } from 'react-router-dom';
+import Dashboard from './layouts/dashBoard';
+
 
 const App = () => {
+
   return (
 <>
-<Dashboard/>
+<Routes>
+  <Route path='/dashboard' element = {<Dashboard/>}/>
+</Routes>
+<Start/>
 </>
   )
 }
