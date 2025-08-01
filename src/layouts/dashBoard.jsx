@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import logo from "../assets/logo.png";
+import { Link } from "react-router-dom";
 
 const Dashboard = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -91,7 +92,9 @@ const Dashboard = () => {
           </div>
 
           {/* My Tasks */}
-          <div className="bg-white p-4 rounded-xl shadow">
+                        <div className="bg-white p-4 rounded-xl shadow">
+                                        <Link to = "/mytask">
+
             <div className="flex justify-between items-center mb-4">
               <h2 className="font-semibold text-lg">My Tasks (07)</h2>
               <button className="text-gray-400">⋮</button>
@@ -103,6 +106,7 @@ const Dashboard = () => {
               <li className="flex justify-between"><span>Study session</span><span className="text-gray-500">Upcoming</span></li>
               <li className="flex justify-between"><span>Organize study schedule</span><span className="text-gray-500">This month</span></li>
             </ul>
+            </Link>
           </div>
 
           {/* New Task Alerts */}

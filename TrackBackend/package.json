@@ -1,0 +1,21 @@
+{
+  "name": "trackbackend",
+  "version": "1.0.0",
+  "description": "total Backend of TrackTime",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/index.js"
+  },
+  "keywords": [
+    "javascript",
+    "TrackTime",
+    "Todolist"
+  ],
+  "author": "@Antas",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
